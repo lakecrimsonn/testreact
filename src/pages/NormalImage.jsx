@@ -12,7 +12,7 @@ const NormalImage = () => {
   const maleImgRef = useRef();
   const femaleImgRef = useRef();
   // const navigate = useNavigate();
-  const springURL = "http://192.168.0.15:8080/api/v1/uploadStandardImage";
+  const springURL = "https://loveloveshot.com/api/v1/uploadStandardImage";
 
   const handleImageChange = (ref, setImageState) => {
     const file = ref.current.files[0];
