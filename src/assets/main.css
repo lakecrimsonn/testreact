@@ -1,0 +1,23 @@
+@import url("./component/button.css");
+
+body {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #cbc0d3 no-repeat center;
+  background-image: url("/public/background.jpeg");
+  background-size: cover; */
+  margin: 0;
+  background: #eaedf1;
+  font-family: "Sunflower", sans-serif;
+}
+.background {
+  position: absolute;
+  margin: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}

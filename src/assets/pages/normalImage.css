@@ -1,0 +1,169 @@
+/* form input::file-selector-button {
+  display: none;
+} */
+
+@media screen and (min-width: 768px) {
+  input:focus {
+    outline: none;
+  }
+  p {
+    margin-top: 1%;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+  }
+
+  .imageContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .imageBoxWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .femaleImageBox,
+  .maleImageBox {
+    width: 60%;
+    height: 60vh;
+    display: flex;
+    border: 7px solid #2ee59d;
+    border-radius: 30px;
+    margin: 3% auto;
+  }
+  .uploadImage {
+    display: none;
+    border-style: none;
+    border: 0 solid black;
+    margin: 0;
+  }
+
+  .btn-upload {
+    width: 150px;
+    height: 30px;
+    background: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-upload:hover {
+    color: #fff;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .normalImage__btnBox {
+    display: flex;
+    text-align: center;
+    margin: 10% auto;
+  }
+
+  .normalImage_title {
+    color:white;
+    text-align: center;
+    border-radius: 0px 0px 10% 10%;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    margin-top: -15%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+  }
+  p {
+    text-align: center;
+    font-size: 9vw;
+    font-weight: bold;
+  }
+
+  .uploadImage {
+    border: 5px solid #ccc;
+    border-radius: 6px;
+  }
+
+  .imageContainer {
+    width: 100%;
+  }
+
+  .femaleImageBox,
+  .maleImageBox {
+    z-index: 999;
+    display: flex;
+    width: 75%;
+    height: 50vh;
+    border: 8px solid #2ee59d;
+    border-radius: 30px;
+    margin: 5% auto;
+  }
+  .uploadImage {
+    display: flex;
+    border-style: none;
+    border: 0 solid black;
+    margin: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  .normalImage_btnBox {
+    margin-top: 10% auto;
+  }
+  .btn-upload {
+    width: 150px;
+    height: 30px;
+    background: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-upload:hover {
+    color: #fff;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .normalImage__btnBox {
+    display: flex;
+    text-align: center;
+    margin: 15% auto;
+  }
+
+  .normalImage__btn {
+    margin-bottom: 5%;
+  }
+
+  .normalImage_title {
+    color:white;
+    text-align: center;
+    border-radius: 0px 0px 10% 10%;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    margin-top: -25%;
+  }
+}
